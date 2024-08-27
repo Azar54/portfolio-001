@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azar Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="hand-drawn-flat-design-anarchy-symbol (1).png" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <header class="bg-white shadow fixed w-full top-0 z-20">
+      <nav class="container mx-auto p-4 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold flex items-center text-primary">
+          <img
+            src="hand-drawn-flat-design-anarchy-symbol (1).png"
+            alt="Logo"
+            class="h-10 w-10 mr-2"
+          />Portfolio
+        </a>
+        <!-- Hamburger Menu Button -->
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-primary focus:outline-none"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+        <!-- Navbar Links -->
+        <ul id="menu" class="hidden md:flex space-x-4">
+          <li><a href="#about" class="hover:text-accent">About</a></li>
+          <li><a href="#education" class="hover:text-accent">Education</a></li>
+          <li><a href="#skills" class="hover:text-accent">Skills</a></li>
+          <li><a href="#projects" class="hover:text-accent">Projects</a></li>
+          <li><a href="#contact" class="hover:text-accent">Contact</a></li>
+          <li>
+            <a
+              href="resume.pdf"
+              class="bg-primary text-white px-3 py-2 rounded-lg hover:bg-accent"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 z-30"
+      >
+        <ul class="space-y-4">
+          <li>
+            <a href="#about" class="block text-primary hover:text-accent"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#education" class="block text-primary hover:text-accent"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="block text-primary hover:text-accent"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="block text-primary hover:text-accent"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="block text-primary hover:text-accent"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="resume.pdf"
+              class="block bg-primary text-white px-3 py-2 rounded-lg hover:bg-accent"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="relative h-screen flex items-center justify-center">
+      <!-- Video Background -->
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="cloud.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <!-- Content -->
+      <div class="relative z-10 text-center px-4 md:px-10">
+        <img
+          src="https://parthilasariya.com/_next/static/media/parth-wave.447b0843.png"
+          alt="Logo"
+          class="mx-auto w-40 h-40 mb-4 animate-bounce"
+        />
+        <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+          Hi, I'm Seyed Noor Azarudeen
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mt-4">
+          I'm a passionate Front-End Developer from Chennai.
+        </p>
+        <div class="mt-8">
+          <a
+            href="#contact"
+            class="bg-primary text-white font-semibold py-3 px-6 rounded-full hover:bg-accent transition duration-300 ease-in-out"
+            >Get In Touch</a
+          >
+          <a
+            href="#projects"
+            class="ml-4 bg-white text-primary font-semibold py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out"
+            >View My Work</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-20">
+      <h2 class="text-3xl font-bold text-primary mb-4">About Me</h2>
+      <p class="text-lg text-secondary">
+        Hello! I'm Azarudeen, a passionate front-end developer from Chennai. As
+        a recent graduate, I am enthusiastic about crafting beautiful,
+        intuitive, and responsive user interfaces.I specialize in HTML, CSS, and
+        JavaScript, and I love using these technologies to bring creative
+        digital ideas to life. My journey in web development began with a
+        curiosity for how websites are built and a desire to create engaging
+        online experiences. <br />
+        I enjoy solving problems and continuously learning new tools and
+        frameworks to enhance my skills. My goal is to build websites that not
+        only look great but also provide seamless and enjoyable user
+        experiences. I am excited to contribute my fresh perspective and
+        technical skills to meaningful projects, and I am always eager to
+        collaborate and grow within a dynamic team. Let's build something
+        amazing together!
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-primary mb-8 text-center">
+          Education
+        </h2>
+        <div class="relative border-l-4 border-primary">
+          <!-- Education Item 1 -->
+          <div class="mb-8 ml-6">
+            <div
+              class="absolute w-6 h-6 bg-primary rounded-full mt-1.5 -left-3"
+            ></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold text-accent">
+                <i class="fas fa-graduation-cap mr-2"></i>Bachelor of Science in
+                Computer Science
+              </h3>
+              <p class="text-secondary mt-2">
+                Aditanar College of Arts & Science
+              </p>
+              <span class="text-gray-600 text-sm">2020 - 2023</span>
+              <p class="text-gray-700 mt-4">
+                Specialized in software development, algorithms, and database
+                management. Graduated with honors.
+              </p>
+            </div>
+          </div>
+          <!-- Education Item 2 -->
+          <div class="mb-8 ml-6">
+            <div
+              class="absolute w-6 h-6 bg-primary rounded-full mt-1.5 -left-3"
+            ></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold text-accent">
+                <i class="fas fa-graduation-cap mr-2"></i>Hsc & SSLC
+              </h3>
+              <p class="text-secondary mt-2">Central Higher Secondary School</p>
+              <span class="text-gray-600 text-sm">2019 - 2020</span><br />
+              <span class="text-gray-600 text-sm">2017 - 2018</span>
+              <p class="text-gray-700 mt-4">
+                Focused on mathematics, science, biology and technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto py-20">
+      <h2 class="text-3xl font-bold text-primary mb-4 text-center">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <span class="skill-badge text-white bg-primary">HTML</span>
+        <span class="skill-badge text-white bg-primary">CSS</span>
+        <span class="skill-badge text-white bg-primary">JavaScript</span>
+        <span class="skill-badge text-white bg-primary">Tailwind CSS</span>
+        <span class="skill-badge text-white bg-primary">React</span>
+        <span class="skill-badge text-white bg-primary">Node</span>
+        <span class="skill-badge text-white bg-primary">Bootstrap</span>
+        <span class="skill-badge text-white bg-primary">MongoDB</span>
+        <span class="skill-badge text-white bg-primary">Java</span>
+        <span class="skill-badge text-white bg-primary">API</span>
+        <span class="skill-badge text-white bg-primary">Responsive Design</span>
+        <span class="skill-badge text-white bg-primary">Python</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-20">
+      <h2 class="text-3xl font-bold text-primary mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Cards -->
+        <!-- Repeat the below structure for each project -->
+        <div class="project-card hover:border-accent">
+          <img
+            src="pet-shop.JPG"
+            alt="Project 1"
+            class="rounded-lg hover:opacity-80 transition-opacity duration-300"
+          />
+          <h3 class="text-xl font-bold text-primary mt-4">Perfect-Pets</h3>
+          <p class="mt-2 text-secondary">
+            A responsive pet shop website built using React, React Router,
+            Bootstrap, and Swiper. It features dynamic product listings, a
+            seamless navigation experience, and interactive image carousels to
+            showcase products. The site offers a clean, professional design with
+            easy-to-use search functionality and a contact form for customer
+            inquiries.
+          </p>
+          <a href="https://perfect-pets.netlify.app/" class="text-accent hover:underline mt-4 block"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card hover:border-accent">
+          <img
+            src="fun-school.JPG"
+            alt="Project 2"
+            class="rounded-lg hover:opacity-80 transition-opacity duration-300"
+          />
+          <h3 class="text-xl font-bold text-primary mt-4">Fun-School</h3>
+          <p class="mt-2 text-secondary">
+            A vibrant and interactive school website created using HTML, CSS,
+            JavaScript, and Bootstrap. The site features a playful design
+            tailored for young students, with sections for school news, events,
+            class information, and a photo gallery. Bootstrap provides a
+            responsive layout, ensuring the site looks great on all devices.
+            website engaging and fun to explore.
+          </p>
+          <a href="https://azar-fun-school.netlify.app/" class="text-accent hover:underline mt-4 block"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card hover:border-accent">
+          <img
+            src="todo.JPG"
+            alt="Project 3"
+            class="rounded-lg hover:opacity-80 transition-opacity duration-300"
+          />
+          <h3 class="text-xl font-bold text-primary mt-4">TODO App</h3>
+          <p class="mt-2 text-secondary">
+            A simple yet effective to-do list application built using HTML, CSS,
+            and JavaScript. This app allows users to add, edit, and delete tasks
+            seamlessly. Featuring a clean and intuitive interface, users can
+            easily organize their daily activities. The use of JavaScript
+            enables real-time task updates, while CSS ensures a visually
+            appealing and responsive design. Perfect for managing personal tasks
+            and staying productive.
+          </p>
+          <a href="https://soft-frangipane-2c6746.netlify.app/" class="text-accent hover:underline mt-4 block"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card hover:border-accent">
+          <img
+            src="a2d-blog.JPG"
+            alt="Project 4"
+            class="rounded-lg hover:opacity-80 transition-opacity duration-300"
+          />
+          <h3 class="text-xl font-bold text-primary mt-4">A2D-BLOG-SITE</h3>
+          <p class="mt-2 text-secondary">
+            A stylish blog site designed for the A2D YouTube channel using HTML,
+            CSS, and JavaScript. The site showcases video content, articles, and
+            tutorials related to the channel, providing viewers with additional
+            resources and insights. A responsive design ensures optimal viewing
+            on all devices, while interactive elements like video embeds and
+            comment sections engage users. Custom styling and a clean layout
+            make it easy for visitors to navigate and find content related to
+            their interests.
+          </p>
+          <a href="https://azar-a2dblog.netlify.app/" class="text-accent hover:underline mt-4 block"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card hover:border-accent">
+          <img
+            src="expense.JPG"
+            alt="Project 5"
+            class="rounded-lg hover:opacity-80 transition-opacity duration-300"
+          />
+          <h3 class="text-xl font-bold text-primary mt-4">Expense Tracker</h3>
+          <p class="mt-2 text-secondary">
+            A user-friendly expense tracker application built with React. This
+            app allows users to easily add, view, and categorize their daily
+            expenses. With features like dynamic charts and real-time updates,
+            users can efficiently monitor their spending habits. The intuitive
+            interface, powered by React's component-based architecture, provides
+            a seamless user experience, making personal finance management
+            simple and accessible.
+          </p>
+          <a href="https://azarexpense-tracker.netlify.app/" class="text-accent hover:underline mt-4 block"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card hover:border-accent">
+          <img
+            src="calculator.JPG"
+            alt="Project 6"
+            class="rounded-lg hover:opacity-80 transition-opacity duration-300"
+          />
+          <h3 class="text-xl font-bold text-primary mt-4">Calculator App</h3>
+          <p class="mt-2 text-secondary">
+            A sleek and responsive calculator application developed using React.
+            This app offers basic arithmetic functions with a user-friendly
+            interface, allowing users to perform calculations easily. Leveraging
+            React's component-based structure, the calculator provides a
+            seamless and interactive experience. The application includes
+            features like a clear display, real-time input handling, and error
+            notifications, making it a reliable tool for everyday calculations.
+          </p>
+          <a href="https://thriving-granita-d973f8.netlify.app/" class="text-accent hover:underline mt-4 block"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-primary mb-8">Get In Touch</h2>
+        <div class="w-full max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+          <!-- Contact Information -->
+          <div class="mb-6">
+            <div class="flex items-center justify-center mb-4">
+              <i class="fas fa-phone-alt text-primary text-2xl mr-4"></i>
+              <p class="text-lg text-gray-700">9489824715</p>
+            </div>
+            <div class="flex items-center justify-center mb-4">
+              <i class="fas fa-map-marker-alt text-primary text-2xl mr-4"></i>
+              <p class="text-lg text-gray-700">
+                Kodungaiyur,Chennai,Tamilnadu,India
+              </p>
+            </div>
+            <div class="flex items-center justify-center mb-4">
+              <i class="fas fa-envelope text-primary text-2xl mr-4"></i>
+              <p class="text-lg text-gray-700">2002azarudeen@gmail.com</p>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="w-full"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="55a6438a-8e40-48c6-bb58-9b4f26c0fdac"
+            />
+            <div class="mb-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-primary"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-primary"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-primary"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="px-8 py-3 bg-primary text-white rounded-lg shadow hover:bg-accent"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4 text-center text-white">
+        <p class="text-lg mb-4">Connect with me</p>
+        <div class="flex justify-center space-x-6">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            class="text-white hover:text-blue-500"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/your-profile"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+        <p class="mt-4 text-gray-400">
+          © 2024 Seyed Noor Azarudeen. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
